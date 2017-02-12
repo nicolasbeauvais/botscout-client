@@ -3,11 +3,11 @@
 namespace NicolasBeauvais\BotScout\Test;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use NicolasBeauvais\BotScout\BotScout;
 use PHPUnit\Framework\TestCase;
+use GuzzleHttp\Handler\MockHandler;
+use NicolasBeauvais\BotScout\BotScout;
 
 class BotScoutTest extends TestCase
 {
