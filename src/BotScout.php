@@ -95,7 +95,7 @@ class BotScout
             $query[$type] = null;
         }
 
-	$query['key'] = $this->apiKey;
+        $query['key'] = $this->apiKey;
 
         return $this->decodeResponse($this->client
             ->get($this->baseUrl, compact('query'))
