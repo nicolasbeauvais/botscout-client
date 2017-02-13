@@ -33,8 +33,9 @@ class BotScoutResponse
             $this->evaluation = $response[3];
         } elseif ($this->type === 'MULTI') {
             $response = array_slice($response, 2);
+            $count = count($response);
 
-            for ($index = 0; $index < count($response); $index += 2) {
+            for ($index = 0; $index < $count; $index += 2) {
                 $this->{strtolower($response[$index])} = (int) $response[$index + 1];
             }
         } else {
